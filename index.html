@@ -143,7 +143,8 @@ section{padding:90px 0}
 .bar2{height:4px;border-radius:2px;background:#E4E0D8;margin-top:10px;overflow:hidden}
 .bar2 i{display:block;height:100%;width:37%;background:#17142E;animation:prog 40s linear infinite}
 @keyframes prog{to{width:100%}}
-.fact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;rotate:.8deg}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.fact small{display:block;color:var(--muted);font-size:14px;margin-top:4px;line-height:1.45}
 .fact .mono{color:var(--muted);font-size:14px}
 .fact div:last-child{font-size:18px;font-weight:500;margin-top:2px}
 
@@ -280,17 +281,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <div class="sh rv"><div><span class="num">03 / sobre mí</span><h2>Sobre mí</h2></div></div>
   <div class="about">
     <div>
-      <p class="rv">Estoy terminando 5° año en la orientación TIC de ORT Belgrano y egreso en 2026. Me anoté para estudiar Ingeniería en Inteligencia Artificial en la UdeSA.</p>
-      <p class="rv d1">Fuera del colegio hago trabajos de desarrollo web y sistemas con IA. Me interesan el backend y la infraestructura.</p>
-      <p class="muted rv d2">Trabajo con una IdeaPad 5 y escucho de todo, sobre todo los primeros discos de Kanye.</p>
+      <p class="rv">Estoy en 5° año de la orientación TIC de ORT Belgrano y egreso en 2026. Me anoté en Ingeniería en Inteligencia Artificial en la UdeSA.</p>
+      <p class="rv d1">Fuera del colegio trabajo para una cadena hotelera. Armé un asistente de IA que corre en sus propios servidores y junta lo que saben los recepcionistas con más años, así los nuevos le pueden preguntar. Lo hice con n8n, PostgreSQL con pgvector, Ollama y faster-whisper, y una PWA para usarlo desde el celular.</p>
+      <p class="rv d2">Para ese mismo cliente hice desarrollo web y procesé los turnos de 119 empleados en una sola planilla.</p>
+      <p class="muted rv d3">Me interesa usar la IA para resolver cosas concretas y todo lo que pasa del lado del servidor: bases de datos, APIs e infraestructura.</p>
     </div>
     <div class="side">
-      <div class="player rv"><img src="assets/assets6/tapa_graduation.jpg" alt="Tapa de Graduation"><div style="flex:1;min-width:0"><div class="t1">Sonando ahora</div><div class="t2">Good Morning</div><div class="t3">Kanye West · Graduation</div><div class="bar2"><i></i></div></div></div>
-      <div class="fact rv d1"><div class="mono">setup</div><div>Lenovo IdeaPad 5</div></div>
-      <div class="fact rv d2" style="rotate:-.6deg"><div class="mono">próximo paso</div><div>Ingeniería en IA · UdeSA</div></div>
+      <div class="mono rv" style="color:var(--muted);font-size:14px">otros proyectos</div>
+      <div class="fact rv"><div class="mono">Astro · Supabase</div><div>NASA Space Explorer</div><small>Tests con Vitest y Playwright, ESLint y CI con GitHub Actions.</small></div>
+      <div class="fact rv d1"><div class="mono">Streamlit · SQLite</div><div>Chef Master Pro</div><small>App de recetas con métricas de uso.</small></div>
+      <div class="fact rv d2"><div class="mono">Identidad de marca</div><div>Carrot Dream</div><small>Manual de marca para una pastelería ficticia: logo, paleta, tipografías y packaging.</small></div>
     </div>
-  </div>
-</div></section>
+  </div></div></section>
 
 <section class="contact" id="contacto"><div class="wrap">
   <span class="num rv">04 / contacto</span>
@@ -324,7 +326,7 @@ const pre = document.getElementById('tpre');
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const P = '<span class="g">timo@ort</span>:<span class="b">~</span>$ ';
 const X = ['<span class="p">██</span>      <span class="l">██</span>',' <span class="p">██</span>    <span class="l">██</span> ','  <span class="p">██</span>  <span class="l">██</span>  ','   <span class="p">██</span><span class="l">██</span>   ','  <span class="l">██</span>  <span class="p">██</span>  ',' <span class="l">██</span>    <span class="p">██</span> ','<span class="l">██</span>      <span class="p">██</span>'];
-const I = ['<span class="g">timo</span>@<span class="g">ort</span>','--------','<span class="k">Rol</span>: backend · web · IA','<span class="k">Host</span>: IdeaPad 5','<span class="k">Curso</span>: 5° año TIC','<span class="k">Proyectos</span>: 3','<span class="k">Egreso</span>: 2026'];
+const I = ['<span class="g">timo</span>@<span class="g">ort</span>','--------','<span class="k">Rol</span>: backend · web · IA','<span class="k">Base</span>: Buenos Aires','<span class="k">Curso</span>: 5° año TIC','<span class="k">Proyectos</span>: 3','<span class="k">Egreso</span>: 2026'];
 const NEO = X.map((a,i) => a + '  ' + I[i]).join('\n');
 const wait = ms => new Promise(r => setTimeout(r, reduced ? 0 : ms));
 async function typeLine(cmd){ pre.insertAdjacentHTML('beforeend', P); for (const c of cmd){ pre.insertAdjacentText('beforeend', c); await wait(45); } await wait(260); pre.insertAdjacentText('beforeend', '\n'); }
