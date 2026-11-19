@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Timoteo Czerwiak</title>
-<meta name="description" content="Portfolio de Timoteo Czerwiak, estudiante de TIC en ORT Belgrano. Backend, web e IA.">
+<meta name="description" content="Portfolio de Timoteo Czerwiak, estudiante de tecnología en ORT Belgrano. Backend, web e IA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Pixelify+Sans:wght@500&family=Quicksand:wght@700&display=swap">
@@ -95,8 +95,11 @@ section{padding:90px 0}
 .rail{position:absolute;left:14px;top:8px;bottom:8px;width:2px;background:var(--line);border-radius:2px}
 .rail i{position:absolute;left:0;top:0;width:2px;height:var(--fill,0%);background:linear-gradient(var(--lilac),var(--pink));border-radius:2px}
 .proj{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:30px 0 70px}
-.proj::before{content:attr(data-y);position:absolute;left:-56px;top:36px;width:30px;height:30px;border-radius:50%;background:var(--bg);border:2px solid var(--lilac);
+.proj::before{content:"";background-position:center;background-repeat:no-repeat;background-size:62%;position:absolute;left:-56px;top:36px;width:30px;height:30px;border-radius:50%;background-color:var(--bg);border:2px solid var(--lilac);
   display:grid;place-items:center;font:700 12px 'Ubuntu Mono',monospace;color:var(--ink)}
+.proj:nth-of-type(1)::before{background-image:url(assets/assets6/st_js.png)}
+.proj:nth-of-type(2)::before{background-image:url(assets/assets6/st_blender.png)}
+.proj:nth-of-type(3)::before{background-image:url(assets/assets6/st_esp32.png)}
 .proj:nth-of-type(even) .media{order:2}
 .media{position:relative;height:420px}
 .print{position:absolute;background:var(--paper);padding:9px;border-radius:3px;box-shadow:0 18px 40px rgba(0,0,0,.28);transition:rotate .5s var(--ease),translate .5s var(--ease),scale .5s var(--ease)}
@@ -195,7 +198,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <header class="hero" id="top"><div class="wrap">
   <div>
-    <div class="kicker rv"><span>●</span> 5° año · TIC · ORT Belgrano</div>
+    <div class="kicker rv"><span>●</span> Último año de Tecnología · ORT Belgrano</div>
     <h1 class="rv d1">Timoteo<br>Czerwiak</h1>
     <p class="lead rv d2">Hago <strong>backend, web y sistemas con IA</strong>. Ahora armo la API de Voitos, un pastillero inteligente.</p>
     <div class="cta rv d3"><a class="btn main" href="#proyectos">Ver proyectos ↓</a><a class="btn" href="https://github.com/t-czerwiak" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/timoteo-nicolas-czerwiak-915151317/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
@@ -209,27 +212,27 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </div></header>
 
 <section id="proyectos"><div class="wrap">
-  <div class="sh rv"><div><span class="num">01 / proyectos</span><h2>Proyectos</h2></div><p>Uno por año, de 3° a 5°, con un rol distinto en cada uno.</p></div>
+  <div class="sh rv"><div><span class="num">01 / proyectos</span><h2>Proyectos</h2></div><p>Uno por año, desde los 15 a los 17 años, con un rol distinto en cada uno.</p></div>
   <div class="timeline" id="tl">
     <div class="rail"><i id="rail"></i></div>
 
-    <article class="proj" data-y="3°">
+    <article class="proj">
       <div class="media rv">
         <div class="print a" style="left:4%;top:20px;rotate:-3deg"><img src="assets/assets/j_s1_full.png" alt="Jugomix, pantalla de bienvenida" width="210" height="295"></div>
         <div class="print b" style="left:40%;top:70px;rotate:3deg"><img src="assets/assets/j_s2_full.png" alt="Jugomix, elegí tu sabor" width="210" height="295"></div>
         <img class="sticker" src="assets/assets6/st_js.png" alt="" style="width:86px;left:0;bottom:4px;rotate:-8deg">
       </div>
       <div class="info rv d1">
-        <div class="meta">3° año · Juguera inteligente</div>
+        <div class="meta">Con 15 años · Juguera inteligente</div>
         <h3>Jugomix</h3>
         <span class="role">Fullstack</span>
-        <p>Programé la app de la juguera, el front y el back.</p>
+        <p>Programé la página web de la juguera: yo me encargué del front y el back, como fullstack. Junto con mis compañeros del grupo hicimos un proyecto de hardware principalmente: una juguera que prepara el jugo sola. Desde la página elegís el sabor (manzana, naranja, limón o frutilla) y si lo querés en vaso o en jarra, y el backend le pasa el pedido a la máquina para que lo prepare.</p>
         <div class="tools"><span class="tool"><img src="assets/assets6/st_html.png" alt="">HTML</span><span class="tool"><img src="assets/assets6/st_js.png" alt="">JavaScript</span></div>
         <div class="type">Tipografía<b style="font-family:'Quicksand',sans-serif">Quicksand</b></div>
       </div>
     </article>
 
-    <article class="proj" data-y="4°">
+    <article class="proj">
       <div class="media rv">
         <div class="print a" style="left:0;top:16px;rotate:-2deg"><img src="assets/assets6/oor_menu_dark.jpg" alt="Out of Reach, menú principal" width="380" height="213"></div>
         <div class="print b" style="left:22%;top:205px;rotate:3deg"><img src="assets/assets6/blender_ui.jpg" alt="Modelado en Blender" width="300" height="169"></div>
@@ -237,26 +240,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <img class="sticker" src="assets/assets6/st_craneo.png" alt="" style="width:90px;right:4%;bottom:10px;rotate:8deg">
       </div>
       <div class="info rv d1">
-        <div class="meta">4° año · Videojuego</div>
+        <div class="meta">Con 16 años · Videojuego</div>
         <h3>Out of Reach</h3>
         <span class="role">Modelador de objetos</span>
-        <p>Modelé objetos del juego en Blender.</p>
+        <p>Out of Reach es un videojuego en 3D ambientado en el espacio que armamos en grupo, donde cada uno se encargó de una parte. Yo fui el modelador de objetos: hice en Blender los objetos que aparecen en el juego, como el dron y el cráneo, y los dejé listos para usarlos dentro del motor.</p>
         <div class="tools"><span class="tool"><img src="assets/assets6/st_blender.png" alt="">Blender</span></div>
         <div class="type">Tipografía<b style="font-family:'Pixelify Sans',monospace">Pixelify Sans</b></div>
       </div>
     </article>
 
-    <article class="proj" data-y="5°">
+    <article class="proj">
       <div class="media rv">
         <div class="phone" style="left:6%;top:0;rotate:-2deg"><img src="assets/assets/v_login_full.png" alt="App de Voitos, inicio de sesión" width="170" height="368"></div>
         <div class="print b" style="left:44%;top:60px;rotate:4deg"><img src="assets/assets/v_foto.png" alt="Landing de Voitos" width="200" height="212"></div>
         <img class="sticker" src="assets/assets6/st_esp32.png" alt="" style="width:150px;left:38%;bottom:6px;rotate:-7deg">
       </div>
       <div class="info rv d1">
-        <div class="meta">5° año · Pastillero inteligente</div>
+        <div class="meta">Con 17 años · Pastillero inteligente</div>
         <h3>Voitos</h3>
         <span class="role">Backend</span>
-        <p>Armo la API que conecta la app con la ESP32 del pastillero y con la base de datos. Uso TypeScript, Express y Supabase.</p>
+        <p>Voitos es un pastillero inteligente que entrega la medicación a horario. Armo la API que conecta la app con la ESP32 del pastillero y con la base de datos. Uso TypeScript, Express y Supabase.</p>
         <div class="tools"><span class="tool"><img src="assets/assets6/st_esp32.png" alt="">ESP32</span><span class="tool"><img src="assets/assets6/st_sql.png" alt="">SQL</span><span class="tool"><img src="assets/logos/supabase_icon.svg" alt="">Supabase</span><span class="tool t">TypeScript</span><span class="tool t">Express</span></div>
         <div class="type">Tipografía<b style="font-family:'Nunito',sans-serif">Nunito</b></div>
         <a class="more" href="https://voitos.vercel.app" target="_blank" rel="noopener">Ver la web de Voitos →</a>
@@ -281,10 +284,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <div class="sh rv"><div><span class="num">03 / sobre mí</span><h2>Sobre mí</h2></div></div>
   <div class="about">
     <div>
-      <p class="rv">Estoy en 5° año de la orientación TIC de ORT Belgrano y egreso en 2026. Me anoté en Ingeniería en Inteligencia Artificial en la UdeSA.</p>
-      <p class="rv d1">Fuera del colegio trabajo para una cadena hotelera. Armé un asistente de IA que corre en sus propios servidores y junta lo que saben los recepcionistas con más años, así los nuevos le pueden preguntar. Lo hice con n8n, PostgreSQL con pgvector, Ollama y faster-whisper, y una PWA para usarlo desde el celular.</p>
-      <p class="rv d2">Para ese mismo cliente hice desarrollo web y procesé los turnos de 119 empleados en una sola planilla.</p>
-      <p class="muted rv d3">Me interesa usar la IA para resolver cosas concretas y todo lo que pasa del lado del servidor: bases de datos, APIs e infraestructura.</p>
+      <p class="rv">Estoy en 5° año de la orientación tecnológica de ORT Belgrano y egreso en 2026. Me anoté en Ingeniería en Inteligencia Artificial en la UdeSA.</p>
+      <p class="rv d1">Me interesa usar la IA para resolver cosas concretas y todo lo que pasa del lado del servidor: bases de datos, APIs e infraestructura.</p>
+      <p class="muted rv d2">Para los datos uso PostgreSQL y Supabase, para las APIs Node.js con Express y para desplegar Docker y Vercel. Con la IA pruebo modelos y herramientas para automatizar tareas y resolver problemas reales.</p>
     </div>
     <div class="side">
       <div class="mono rv" style="color:var(--muted);font-size:14px">otros proyectos</div>
@@ -326,7 +328,7 @@ const pre = document.getElementById('tpre');
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const P = '<span class="g">timo@ort</span>:<span class="b">~</span>$ ';
 const X = ['<span class="p">██</span>      <span class="l">██</span>',' <span class="p">██</span>    <span class="l">██</span> ','  <span class="p">██</span>  <span class="l">██</span>  ','   <span class="p">██</span><span class="l">██</span>   ','  <span class="l">██</span>  <span class="p">██</span>  ',' <span class="l">██</span>    <span class="p">██</span> ','<span class="l">██</span>      <span class="p">██</span>'];
-const I = ['<span class="g">timo</span>@<span class="g">ort</span>','--------','<span class="k">Rol</span>: backend · web · IA','<span class="k">Base</span>: Buenos Aires','<span class="k">Curso</span>: 5° año TIC','<span class="k">Proyectos</span>: 3','<span class="k">Egreso</span>: 2026'];
+const I = ['<span class="g">timo</span>@<span class="g">ort</span>','--------','<span class="k">Rol</span>: backend · web · IA','<span class="k">Base</span>: Buenos Aires','<span class="k">Curso</span>: último año de Tecnología','<span class="k">Proyectos</span>: 3','<span class="k">Egreso</span>: 2026'];
 const NEO = X.map((a,i) => a + '  ' + I[i]).join('\n');
 const wait = ms => new Promise(r => setTimeout(r, reduced ? 0 : ms));
 async function typeLine(cmd){ pre.insertAdjacentHTML('beforeend', P); for (const c of cmd){ pre.insertAdjacentText('beforeend', c); await wait(45); } await wait(260); pre.insertAdjacentText('beforeend', '\n'); }
